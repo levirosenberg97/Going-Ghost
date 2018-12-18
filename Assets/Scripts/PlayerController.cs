@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
             //Checks to see if at the peak of your jump and increases the fall rate;
             if (prevHeight > currHeight && isGrounded == false)
             {
-                rb.AddForce(Vector2.down * (jumpForce * 1.1f), ForceMode.Acceleration);
+                rb.AddForce(Vector2.down * jumpForce, ForceMode.Force);
             }
             else
             {
