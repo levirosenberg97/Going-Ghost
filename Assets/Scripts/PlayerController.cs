@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     public float jumpForce;
     public float landLag;
     public GameObject ghost;
+    public Animator anim;
 
     void Start ()
     {
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
         currHeight = transform.position.y;
         prevHeight = currHeight;
 
+        anim = GetComponent<Animator>();
         isAlive = true;
         rb = GetComponent<Rigidbody>();
 	}
@@ -33,7 +35,7 @@ public class PlayerController : MonoBehaviour
     void Move()
     {
         xInput = Input.GetAxisRaw("Horizontal");
-
+        anim.SetBool("isWalking", true);
         transform.position += new Vector3(xInput,0, 0).normalized * Time.deltaTime * speed;
     }
 
@@ -44,22 +46,33 @@ public class PlayerController : MonoBehaviour
 
         if (isAlive == true)
         {
-            Move();
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+            {
+                Move();
+            }
+            else
+            {
+                anim.SetBool("isWalking", false);
+            }
 
             //Triggers the Jump
             if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
             {
                 rb.AddForce(Vector2.up * jumpForce, ForceMode.Impulse);
+                anim.SetBool("isJumping", true);
                 //landLag = 0;
             }
 
             //Checks to see if at the peak of your jump and increases the fall rate;
             if (prevHeight > currHeight && isGrounded == false)
             {
+                anim.SetBool("isJumping", false);
+                anim.SetBool("isFalling", true);
                 rb.AddForce(Vector2.down * jumpForce, ForceMode.Force);
             }
             else
             {
+                anim.SetBool("isFalling", false);
                 prevHeight = currHeight;
             }
 
@@ -67,6 +80,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.E) && isAlive == true && isGrounded == true)
         {
             isAlive = false;
+            anim.SetBool("isDead", true);
             ghost.SetActive(true);
         }
 

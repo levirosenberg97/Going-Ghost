@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: bb2ee7a8a4c29564e9c8410844d74e72
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Belt
+    100002: Body
+    100004: Chest
+    100006: Foot.L
+    100008: Foot.R
+    100010: Forearm.L
+    100012: Forearm.R
+    100014: Hair
+    100016: Hand.L
+    100018: Hand.L.001
+    100020: Hand.R
+    100022: Hand.R.001
+    100024: Head
+    100026: HipJoint.L
+    100028: HipJoint.R
+    100030: Hips
+    100032: HipsCtrl
+    100034: IkLeg.L
+    100036: IkLeg.R
+    100038: IkPoleLeg.L
+    100040: IkPoleLeg.R
+    100042: MedicalDress
+    100044: Mort
+    100046: //RootNode
+    100048: Neck
+    100050: Root
+    100052: Shin.L
+    100054: Shin.R
+    100056: Shoulder.L
+    100058: Shoulder.R
+    100060: Spine1
+    100062: Spine2
+    100064: Thigh.L
+    100066: Thigh.R
+    100068: Toe.L
+    100070: Toe.R
+    100072: UpperArm.L
+    100074: UpperArm.R
+    400000: Belt
+    400002: Body
+    400004: Chest
+    400006: Foot.L
+    400008: Foot.R
+    400010: Forearm.L
+    400012: Forearm.R
+    400014: Hair
+    400016: Hand.L
+    400018: Hand.L.001
+    400020: Hand.R
+    400022: Hand.R.001
+    400024: Head
+    400026: HipJoint.L
+    400028: HipJoint.R
+    400030: Hips
+    400032: HipsCtrl
+    400034: IkLeg.L
+    400036: IkLeg.R
+    400038: IkPoleLeg.L
+    400040: IkPoleLeg.R
+    400042: MedicalDress
+    400044: Mort
+    400046: //RootNode
+    400048: Neck
+    400050: Root
+    400052: Shin.L
+    400054: Shin.R
+    400056: Shoulder.L
+    400058: Shoulder.R
+    400060: Spine1
+    400062: Spine2
+    400064: Thigh.L
+    400066: Thigh.R
+    400068: Toe.L
+    400070: Toe.R
+    400072: UpperArm.L
+    400074: UpperArm.R
+    2100000: mat_playerbelt
+    2100002: mat_playerhair
+    2100004: mat_playergown
+    2100006: mat_playerskin
+    4300000: Belt
+    4300002: Hair
+    4300004: MedicalDress
+    4300006: Body
+    7400000: Mort|ArmatureAction
+    7400002: Mort|BodyAction
+    7400004: Mort|EmptyAction
+    9500000: //RootNode
+    13700000: Belt
+    13700002: Body
+    13700004: Hair
+    13700006: MedicalDress
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
